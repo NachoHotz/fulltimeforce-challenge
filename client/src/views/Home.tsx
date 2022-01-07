@@ -22,6 +22,9 @@ export default function Home({ commits }: HomeProps) {
         </h4>
       </header>
       <main className={style.mainContainer}>
+        {commits.length === 0 && (
+          <h4 className={style.noCommits}>Loading...</h4>
+        )}
         {commits.map((commit) => {
           return (
             <CommitItem
