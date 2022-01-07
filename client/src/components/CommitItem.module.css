@@ -1,0 +1,25 @@
+.commitContainer {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 93%;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.miscContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.commitMessage {
+  margin-left: 10px;
+  font-weight: bold;
+}
