@@ -7,7 +7,7 @@ type HomeProps = {
 export default function Home({ commits }: HomeProps) {
   return (
     <div>
-      <h2>Commits</h2>
+      <h2>fulltimeforce-challenge commits history</h2>
       {commits.map((commit) => {
         return <CommitItem commit={commit} />;
       })}
