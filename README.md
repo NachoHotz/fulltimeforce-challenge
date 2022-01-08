@@ -8,7 +8,7 @@ This challenge requires to see the commits history of the current project, by bu
 - Backend: NodeJS, Express
 - Frontend: ReactJS, Bootstrap (for pre-style HTML elements), CSS Modules for styling
 
-## How to use
+## How to run locally
 
 First, make sure to clone this repository:
 
