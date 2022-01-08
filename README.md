@@ -35,3 +35,7 @@ Once the install is finished, run the comman ```npm start``` on each folder to s
 The backend will execute on port 3001, so you can go into http://localhost:3001 to see it working
 
 Once the client side has started, you will be redirected to http://localhost:3000 to see the Frontend working.
+
+### Deployment
+
+If you wish to not run the app locally, head to https://fulltimeforce-challenge.vercel.app/ to see the deployed version.
