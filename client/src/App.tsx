@@ -7,7 +7,9 @@ function App() {
 
   const fetchCommits = async () => {
     try {
-      const { data } = await axios.get('http://localhost:3001/github');
+      const { data } = await axios.get(
+        'https://fulltimeforce-challenge-api.herokuapp.com/github',
+      );
       setCommits(data);
     } catch (e) {
       console.error(e);
