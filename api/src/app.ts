@@ -11,7 +11,7 @@ app.use(cookieParser());
 app.use((req: Request, res: Response, next: NextFunction) => {
   res.header(
     'Access-Control-Allow-Origin',
-    'https://fulltimeforce-challenge.vercel.app/',
+    'https://fulltimeforce-challenge.vercel.app',
   );
   res.header('Access-Control-Allow-Credentials', 'true');
   res.header(
