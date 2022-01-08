@@ -1,6 +1,5 @@
 import express, { Application, Request, Response, NextFunction } from 'express';
 import cookieParser from 'cookie-parser';
-import morgan from 'morgan';
 
 import routes from './routes/index.route';
 import setHeaders from './middlewares/setHeaders';
@@ -11,7 +10,6 @@ app.use(express.urlencoded({ extended: true, limit: '25mb' }));
 app.use(express.json({ limit: '25mb' }));
 app.use(cookieParser());
 app.use(setHeaders);
-app.use(morgan('dev'));
 
 app.use('/', routes);
 
