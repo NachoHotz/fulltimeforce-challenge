@@ -16,6 +16,12 @@ First, make sure to clone this repository:
 git clone https://github.com/NachoHotz/fulltimeforce-challenge.git
 ```
 
+The, move into the development branch:
+
+```bash
+git checkout development
+```
+
 Then, head into the API folder and install the packages needed for the Backend to work. This project is built using NPM.
 
 ```bash
