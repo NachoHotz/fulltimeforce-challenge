@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.ts"
+    "dev": "nodemon index.ts",
+    "start": "nodemon dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -29,5 +30,9 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15",
     "ts-node": "^10.4.0"
+  },
+  "engines": {
+    "node": "16.x",
+    "npm": "8.1.2"
   }
 }
