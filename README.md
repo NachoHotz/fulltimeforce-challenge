@@ -25,8 +25,11 @@ git checkout development
 After that, create a `.env` file in the root of the `api` folder and set the following envs:
 
 `API_PORT`
+
 `NODE_ENV`
+
 `CLIENT_DEV_URL`
+
 `CLIENT_PROD_URL`
 
 Then, head into the API folder and install the packages needed for the Backend to work. This project is built using NPM.
