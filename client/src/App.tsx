@@ -5,11 +5,15 @@ import Home from './views/Home';
 function App() {
   const [commits, setCommits] = useState([]);
 
+  const { REACT_APP_API_DEV_URL, REACT_APP_API_PROD_URL, NODE_ENV } =
+    process.env;
+
+  const API_URL =
+    NODE_ENV === 'development' ? REACT_APP_API_DEV_URL : REACT_APP_API_PROD_URL;
+
   const fetchCommits = async () => {
     try {
-      const { data } = await axios.get(
-        'https://fulltimeforce-challenge-api.herokuapp.com/github',
-      );
+      const { data } = await axios.get(API_URL!);
       setCommits(data);
     } catch (e) {
       console.error(e);
