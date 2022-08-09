@@ -1,9 +1,13 @@
-import app from './src/app';
 import dotenv from 'dotenv';
+import app from './src/app';
+import { envConfig } from './src/config';
+
 dotenv.config();
 
-const API_PORT: number | string = process.env.PORT || 3001;
+const { API_PORT } = envConfig;
 
-app.listen(API_PORT, () => {
-  console.log(`server running on port ${API_PORT}`);
+const PORT: number | string = process.env.PORT || API_PORT!;
+
+app.listen(PORT, () => {
+  console.log(`server running on port ${PORT}`);
 });

@@ -1,15 +1,16 @@
 import express, { Application, Request, Response, NextFunction } from 'express';
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
 
 import routes from './routes/index.route';
-import setHeaders from './middlewares/setHeaders';
+import { corsOptions } from './config';
 
 const app: Application = express();
 
 app.use(express.urlencoded({ extended: true, limit: '25mb' }));
 app.use(express.json({ limit: '25mb' }));
 app.use(cookieParser());
-app.use(setHeaders);
+app.use(cors(corsOptions));
 
 app.use('/', routes);
 
