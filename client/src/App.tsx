@@ -5,6 +5,8 @@ import Home from './views/Home';
 function App() {
   const [commits, setCommits] = useState([]);
 
+  const { NODE_ENV } = process.env;
+
   const API_URL =
     NODE_ENV === 'development'
       ? 'http://localhost:3001/github'
