@@ -10,7 +10,9 @@ function App() {
   const NODE_ENV = process.env.NODE_ENV;
 
   const API_URL =
-    NODE_ENV === 'development' ? REACT_APP_API_DEV_URL : REACT_APP_API_PROD_URL;
+    NODE_ENV === 'development'
+      ? 'http://localhost:3001/github'
+      : 'https://fulltimeforce-challenge.herokuapp.com/github';
 
   const fetchCommits = async () => {
     try {
