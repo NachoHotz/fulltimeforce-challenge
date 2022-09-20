@@ -5,12 +5,9 @@ import Home from './views/Home';
 function App() {
   const [commits, setCommits] = useState([]);
 
-  const { NODE_ENV } = process.env;
+  const { NODE_ENV, REACT_APP_SERVER_DEV_URL, REACT_APP_SERVER_PROD_URL } = process.env;
 
-  const API_URL =
-    NODE_ENV === 'development'
-      ? 'http://localhost:3001/github'
-      : 'https://fulltimeforce-challenge.herokuapp.com/github';
+  const API_URL = (NODE_ENV === 'development' ? REACT_APP_SERVER_DEV_URL : REACT_APP_SERVER_PROD_URL)
 
   const fetchCommits = async () => {
     try {
