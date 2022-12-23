@@ -20,7 +20,7 @@ export default function CommitItem({
     <article className={style.commitContainer}>
       <section className={style.miscContainer}>
         <h4>{sha}</h4>
-        <h5>{`${dateFormatted.getDay()}/${
+        <h5>{`${dateFormatted.getDate()}/${
           dateFormatted.getMonth() + 1
         }/${dateFormatted.getFullYear()} - ${dateFormatted.getHours()}:${dateFormatted.getMinutes()}:${dateFormatted.getSeconds()}`}</h5>
       </section>
