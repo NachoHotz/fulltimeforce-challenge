@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { getCommits } from './handler/getInfo';
+import { CommitInfo } from './types/CommitInfo';
 import Home from './views/Home';
 
 function App() {
-  const [commits, setCommits] = useState([]);
+  const [commits, setCommits] = useState<CommitInfo[]>([]);
 
   const fetchCommits = async () => {
     try {

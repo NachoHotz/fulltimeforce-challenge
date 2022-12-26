@@ -1,8 +1,9 @@
 import CommitItem from '../components/CommitItem';
+import { CommitInfo } from '../types/CommitInfo';
 import style from './Home.module.css';
 
 type HomeProps = {
-  commits: Array<any>;
+  commits: Array<CommitInfo>;
 };
 
 export default function Home({ commits }: HomeProps) {
@@ -32,9 +33,9 @@ export default function Home({ commits }: HomeProps) {
               sha={commit.sha}
               authorName={commit.commit.author.name}
               authorEmail={commit.commit.author.email}
-              date={commit.commit.author.date}
+              date={commit.commit.author.date.toString()}
               message={commit.commit.message}
-            />
+          />
           );
         })}
       </main>
