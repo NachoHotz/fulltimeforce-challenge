@@ -11,7 +11,7 @@ function App() {
       const { data } = await getCommits()
       setCommits(data);
     } catch (e) {
-      console.error(e);
+      console.error('GET_COMMITS_ERROR', { e });
     }
   };
 
