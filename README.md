@@ -36,8 +36,11 @@ Then, head into the API folder and install the packages needed for the Backend t
 
 ```bash
 cd api/
+```
 
 Then, execute the following command:
+
+```bash
 npm install
 ```
 
@@ -57,4 +60,3 @@ Once the client side has started, you will be redirected to <http://localhost:30
 ### Deployment
 
 If you wish to not run the app locally, head to <https://fulltimeforce-challenge.vercel.app/> to see the deployed version.
-
