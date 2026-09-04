@@ -6,7 +6,7 @@ const { API_URL } = endpoints;
 
 const getCommits = async () => {
   try {
-    const { data } = await axios.get<CommitInfo[]>(`${API_URL}`);
+    const { data } = await axios.get<CommitInfo[]>(API_URL);
 
     return data;
   } catch (e) {
