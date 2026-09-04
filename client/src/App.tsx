@@ -9,6 +9,7 @@ function App() {
   const fetchCommits = async () => {
     try {
       const { data } = await getCommits()
+      //@ts-ignore
       setCommits(data);
     } catch (e) {
       console.error('GET_COMMITS_ERROR', { e });
