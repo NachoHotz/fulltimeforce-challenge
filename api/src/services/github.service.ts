@@ -11,6 +11,9 @@ const getCommits = async () => {
     return data;
   } catch (e) {
     console.error(e);
+    console.log('STRING ERROR:', JSON.stringify(e))
+
+    throw new Error('Error al obtener Commits desde API Github')
   }
 };
 
